@@ -1,0 +1,203 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    cursor: default;
+
+}
+
+.bodyhidden {
+    opacity: 0;
+}
+
+.bodyshow {
+    transition: opacity .8s ease;
+    opacity: 1;
+}
+
+.drop-shadow {
+    -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.7));
+    text-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+}
+
+#imgDescribe {
+    cursor: pointer;
+}
+
+#background {
+    /* background-image: url("./img/LuzernSwiss.JPG"); */
+    background-color: transparent;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#showbox {
+    text-align: center;
+    font-size: 1050%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+#showbox p {
+    font-size: 35%;
+}
+
+.center {}
+
+.weather {
+    float: left;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+
+.weather .weatherNow img {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+}
+
+.avgtemp {
+    display: inline;
+}
+
+.gym {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: blue;
+}
+
+.index {
+    padding-left: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.avgtemp {
+    text-align: center;
+}
+
+.todo {
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+    width: 260px;
+    display: inline-block;
+    height: auto;
+    background-color: rgba(1, 1, 1, 0.9);
+    border-radius: 1%;
+    padding: 10px 15px 50px 15px;
+    overflow: hidden;
+    transition: opacity .8s ease;
+    opacity: 1;
+}
+
+#todo-input {
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    position: absolute;
+    display: inline-block;
+    bottom: 10px;
+    line-height: 30px;
+    font-size: 20px;
+    width: 260px;
+
+}
+
+.todo-btn {
+    position: absolute;
+    outline: none;
+    bottom: 15px;
+    right: 20px;
+    width: 50px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none: border-radius: 1%;
+}
+
+#todo-btn {
+    cursor: pointer;
+}
+
+#todo h4 {
+    color: gray;
+}
+
+#todo h4 span {
+    color: gray;
+}
+
+.del-btn {
+    float: right;
+    position: block;
+    top: 0px;
+    display: none;
+}
+
+.todo-btn p {
+    font-size: 20px;
+}
+
+.edit {
+    color: gray;
+}
+
+#todo ul {
+    /* float: left; */
+    list-style: none;
+}
+
+.todospan {
+    display: block;
+    word-wrap: break-word;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-right: 25px;
+}
+
+.checkspan {
+    color: gray;
+    text-decoration: line-through;
+    display: block;
+    word-wrap: break-word;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-right: 25px;
+}
+
+.checkbox {
+    float: left;
+    display: block;
+    position: relative;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    border: 0;
+    border-radius: 20%;
+    outline: 0;
+
+}

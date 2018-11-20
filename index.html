@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Momentum-ckmyxxx</title>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="bodyhidden">
+    <!-- 背景圖片 -->
+    <div class="background" id="background"></div>
+    </div>
+    <!-- 圖片說明 -->
+    <div class="index drop-shadow">
+        <p id="imgDescribe"></p>
+    </div>
+    <!-- 時間顯示 -->
+    <div id="showbox" class="drop-shadow">
+    </div>
+    <!-- yahoo weather -->
+    <div class="box drop-shadow">
+        <div class="weather">
+            <h3 id="CName"></h3>
+            <div class="weatherNow"></div>
+        </div>
+    </div>
+    <!-- Todo list -->
+    <div class="todo" id="todo">
+        <h4> <span id="todoCount">0</span> To Do</h4>
+        <ul id="todobody">
+        </ul>
+        <input type="text" placeholder="New todo" id="todo-input">
+    </div>
+    <button class="todo-btn drop-shadow">
+        <p id="todo-btn">Todo</p>
+    </button>
+    <script src="./js/cityData.js"></script>
+    <script src="./js/weatherScript.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/photo.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        $(function () {
+            $("body").removeClass();
+            $("body").addClass("bodyshow");
+        });
+    </script>
+</body>
+
+</html>
